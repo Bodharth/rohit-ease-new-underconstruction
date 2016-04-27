@@ -44,13 +44,13 @@ Rails.application.configure do
    config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.sendgrid.net',
-  :port           => '587',
-  :authentication => :plain,
-  :user_name      => 'bodharthlonkar@gmail.com',
-  :password       => 'jaiguruji123456',
-  :domain         => 'heroku.com',
-  :enable_starttls_auto => true
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.sendgrid.net',
+    port:                  587,
+    domain:               'gmail.com',
+    user_name:            'bodharthlonkar@gmail.com',
+    password:             'jaiguruji123456',
+    authentication:       'plain',
+    enable_starttls_auto: true
 }
 end
