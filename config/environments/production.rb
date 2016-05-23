@@ -82,11 +82,11 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
   config.action_mailer.smtp_settings = {
-    address:              'smtp.sendgrid.net',
+   address:              'smtp.sendgrid.net',
     port:                 587,
-    domain:               'gmail.com',
-    user_name:            'bodharthlonkar@gmail.com',
-    password:             'jaiguruji123456',
+    domain:               'http://rohit-easeinsure.herokuapp.com',
+    user_name:            'lbodharth@yahoo.in',
+    password:             'Authorization: Bearer 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',
     authentication:       'plain',
     enable_starttls_auto: true  
 }
